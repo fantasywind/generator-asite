@@ -15,7 +15,11 @@
     "router"
   ],
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "react",
+    "flux",
+    "webpack",
+    "express"
   ],
   "author": "Chia Yu Pai (Rytass)",
   "license": "MIT",
