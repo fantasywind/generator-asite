@@ -20,6 +20,8 @@
   "author": "Chia Yu Pai (Rytass)",
   "license": "MIT",
   "dependencies": {
-    "yeoman-generator": "^0.20.2"
+    "lodash": "^3.10.1",
+    "yeoman-generator": "^0.20.2",
+    "yosay": "^1.0.5"
   }
 }
