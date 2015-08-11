@@ -1,0 +1,25 @@
+{
+  "name": "generator-asite",
+  "version": "0.0.1",
+  "description": "Yeoman Generator for React with Flux Flow and API Server",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:fantasywind/generator-asite.git"
+  },
+  "files": [
+    "app",
+    "router"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "author": "Chia Yu Pai (Rytass)",
+  "license": "MIT",
+  "dependencies": {
+    "yeoman-generator": "^0.20.2"
+  }
+}
