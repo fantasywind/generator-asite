@@ -70,7 +70,16 @@ module.exports = generators.Base.extend({
       '_webpack.config.js': 'webpack.config.js',
       '_index.html': 'src/_index.html',
       'scripts/_main.js': 'src/scripts/main.js',
-      'scripts/components/_App.js': 'src/scripts/components/App.js'
+      'scripts/actions/_AuthActions.js': 'src/scripts/actions/AuthActions.js',
+      'scripts/components/_App.js': 'src/scripts/components/App.js',
+      'scripts/components/_SiteHeader.js': 'src/scripts/components/SiteHeader.js',
+      'scripts/components/_UserPanel.js': 'src/scripts/components/UserPanel.js',
+      'scripts/components/_LoginPopup.js': 'src/scripts/components/LoginPopup.js',
+      'scripts/components/_WelcomePage.js': 'src/scripts/components/WelcomePage.js',
+      'scripts/components/_SomethingAwesome.js': 'src/scripts/components/SomethingAwesome.js',
+      'scripts/constants/_AuthConstants.js': 'src/scripts/constants/AuthConstants.js',
+      'scripts/dispatcher/_AppDispatcher.js': 'src/scripts/dispatcher/AppDispatcher.js',
+      'scripts/stores/_AuthStore.js': 'src/scripts/stores/AuthStore.js',
     };
 
     _.forEach(files, function (target, origin) {

@@ -21,6 +21,14 @@ var Routes = {
   main: require('./api/routes/main.js')
 };
 
+// Get Server Render
+var renderPage = function (url) {
+  var html = React.renderToString(React.createElement(ClientApp, {
+    path: url
+  }));
+  return ClientContainer.replace(/<!--Render Content-->/, html);
+};
+
 // Binder
 module.exports = function (app) {
   app.use(logger('dev'));
@@ -33,10 +41,7 @@ module.exports = function (app) {
   // Handle Server Render
   app.use(function (req, res, next) {
     if (req.url.match(/\/(index\.html?)?$/)) {
-      var html = React.renderToString(React.createElement(ClientApp, {
-        path: req.url
-      }));
-      res.send(ClientContainer.replace(/<!--Render Content-->/, html));
+      res.send(renderPage(req.url));
     } else {
       next();
     }
@@ -49,6 +54,11 @@ module.exports = function (app) {
   });
 
   app.use(Routes.main);
+
+  // Fallback to index.html
+  app.use(function (req, res) {
+    res.send(renderPage(req.url));
+  });
 
   return app;
 };
