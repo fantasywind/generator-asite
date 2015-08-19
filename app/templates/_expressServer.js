@@ -6,7 +6,7 @@ var React = require('react');
 var path = require('path');
 var fs = require('fs');
 var logger = require('morgan');
-var debug = require('debug')('mysite123:Server');
+var debug = require('debug')('<%= appname%>:Server');
 var bodyParser = require('body-parser');
 var app = express();
 
