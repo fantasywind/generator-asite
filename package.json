@@ -1,6 +1,6 @@
 {
   "name": "generator-asite",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Yeoman Generator for React with Flux Flow and API Server",
   "main": "app/index.js",
   "scripts": {
