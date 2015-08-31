@@ -1,15 +1,12 @@
 {
   "name": "generator-asite",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Yeoman Generator for React with Flux Flow and API Server",
   "main": "app/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:fantasywind/generator-asite.git"
-  },
+  "repository": "fantasywind/generator-asite",
   "files": [
     "app",
     "router"
